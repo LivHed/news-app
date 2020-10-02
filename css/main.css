@@ -137,10 +137,11 @@ textarea {
   .main-nav a {
     color: #3e3f41;
     font-size: .99em;
+    font-weight: bold;
   }
   
   .main-nav a:hover {
-    color: #718daa;
+    color: #539eee;
   }
   
   
@@ -240,7 +241,8 @@ p {
 
 /* Base styles Header, footer */   
 header, footer {
-  background-color: #a2cabd;
+/*  background-color: #a2cabd;  */
+  background-color: #e9e3e3;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -362,7 +364,7 @@ footer .social-icons p i {
 }
 
 footer .social-icons p i:hover {
-  color: #ccdbd7;
+  color: #539eee;
 }
 
 footer .copyright {
