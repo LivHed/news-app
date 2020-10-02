@@ -112,6 +112,7 @@ textarea {
   
   a {
     text-decoration: none;
+    cursor: pointer;
   }
   
   .container a {
@@ -144,7 +145,7 @@ textarea {
     color: #539eee;
   }
   
-  
+
   .header {
     padding-top: .5em;
     padding-bottom: .5em;
@@ -176,8 +177,8 @@ textarea {
       width: 80%;
       margin: 0 auto;
       max-width: 1150px;
-    } 
-    }
+      } 
+  }
   
   }
   
@@ -189,30 +190,6 @@ textarea {
   
   }
 
-   /* General styles */
-/*html {
-  font-size: 16px;
-  margin: 0;
-} */
-   
-/*body {
-  font-family: 'Open Sans', sans-serif;
-  font-size: 1em;
-  text-align: center;
-  color: #222;
-} */
-
-/*ul, 
-ol {
-  list-style-type: none;
-}  */
- 
-/*a {
-  color: #e2e3ed;
-  text-decoration: none;
-  margin-right: 18px; 
-  cursor: pointer;
-} */
  
 h2 {
   font-family: 'Poppins', sans-serif;
@@ -232,16 +209,9 @@ p {
   font-size: 0.875em;
   line-height: 1.29;
 }
- 
-/*.content-wrapper {
-  width: 90%;
-  margin: 50px 0;
-} */
-
 
 /* Base styles Header, footer */   
 header, footer {
-/*  background-color: #a2cabd;  */
   background-color: #e9e3e3;
   display: flex;
   justify-content: space-between;
@@ -249,70 +219,6 @@ header, footer {
   flex-flow: row wrap;
   margin: 0 auto;
 }
-
-/* Header styles */
-
-/*header {
-  padding: 15px 0;
-} */
-
-/*header .content-wrapper {
-  display: flex;
-  align-items: center;
-  justify-content: space-between; 
-  flex-flow: row wrap;
-  margin: 0;
-} */
-
-/*header a {
-  width: 20%; 
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-flow: row wrap;
-  font-size: 16px;
-} */
-
-/*header button {
-  display: flex;
-  justify-content: center;
-  flex-flow: row wrap;
-  align-items: center;
-  font-size: 18px;
-} */
-
-/*.logo-text {
-  font-weight: 700;
-  font-size: 28px;
-  text-align: left;
-} */
-
-/* .header-divider {
-  width: 100%;
-  height: 1px;
-  margin: 10px 0 20px 0;
-  background: #3a3a3a; 
-} */
-
-/*header nav {
-  width: 100%;
-  font-size: 1.125em;
-  font-weight: 400;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-flow: row wrap;
-} */
-
-/*header nav ul {
-  width: 90%;
-  display: flex;
-  justify-content: right;
-} */
-
-/*header nav ul li {
-  font-size: 1.125em;
-} */
 
 /* Footer styles */
 
@@ -381,7 +287,7 @@ footer .copyright {
   margin-top: 15px;
 }
   
-/* columns placed on top of each other on small screens */
+/* img- columns placed on top of each other */
 .column {
   flex: 50%;
   max-width: 50%;
@@ -485,7 +391,7 @@ footer .copyright {
    Modify as content requires.
    ========================================================================== */
 
- /* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+ /* Responsive layout - makes the columns stack on top of each other instead of next to each other */
  @media screen and (max-width: 600px) { 
   
   /* General styles */
@@ -496,6 +402,7 @@ footer .copyright {
   }
 }
 
+/* opacity layer and text upon the article images */
 .container {
   position: relative;
   max-width: 100%; /* Maximum width */
@@ -504,12 +411,12 @@ footer .copyright {
 
 .container .content {
   position: absolute; /* Position the background text */
-  bottom: 0; /* At the bottom. Use top:0 to append it to the top */
+  bottom: 0; /* At the bottom. Using top:0 to append it to the top */
   background: rgb(0, 0, 0); /* Fallback color */
-  background: rgba(0, 0, 0, 0.7); /* Black background with 0.7 opacity */
+  background: rgba(0, 0, 0, 0.7); /* Black bg with 0.7 opacity */
   color: #f1f1f1; /* Grey text */
   width: 100%; /* Full width */
-  padding: 0; /* Some padding */
+  padding: 0; /* padding */
   text-align: center;
   font-size: 16px;
 }
@@ -542,36 +449,6 @@ header {
   max-width: 640px;
   margin: 100px 0;
 }
-
- /* Header */
-
-/* header {
-  justify-content: space-around;
-  padding: 33px 0;
-  margin: 0 auto;
-} */
-
-/*header .content-wrapper {
-  width: 100%;
-  justify-content: space-between;
-} */
-
-/*header figure {
-  width: 30%;
-}
-
-header nav {
-  width: 30%;
-}
-
-header nav ul {
-  justify-content: space-between;
-}
-
-.header-divider {
-  display: none;
-} */
-
 
 /* Footer */
 
@@ -729,6 +606,14 @@ p {
 
   .container .content a:hover {
     color: rgb(228, 143, 17);
+  }
+
+  footer {
+    padding-top: 5px;
+  }
+
+  footer h4 {
+    margin-top: 0;
   }
 
   footer .social-icons p i {
