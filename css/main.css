@@ -103,7 +103,6 @@ textarea {
     list-style: none;
   }
   
-  
   h2,
   h3,
   a {
@@ -117,6 +116,16 @@ textarea {
   
   .container a {
     color: #f1f1f1;
+  }
+
+  .article-icons {
+    text-align: right;
+  }
+
+  .article-icons i {
+    padding-left: 10px;
+    padding-right: 10px;
+    font-size: 12px;
   }
   
   .logo {
@@ -262,6 +271,7 @@ footer .social-icons p {
   align-items: center;
   width: 60px;
   height: 60px;
+  font-size: 18px;
 }
 
 footer .social-icons p i {
@@ -425,6 +435,7 @@ footer .copyright {
 
 .container .content p {
   margin: 5px;
+  margin-bottom: 0;
 }
 
 .container .content h4 {
@@ -468,6 +479,11 @@ footer .footer-content {
 
 footer .contact {
   margin-bottom: 0;
+  margin-right: 5px;
+}
+
+footer .social {
+  margin-left: 5px;
 }
 
 footer h4 {
@@ -482,6 +498,10 @@ footer p {
 footer .social-icons {
   width: 12.5em;
   justify-content: space-between;
+}
+
+footer .social-icons p i {
+  font-size: 1.9em;
 }
 
 footer .copyright {
@@ -539,14 +559,44 @@ footer .copyright {
 
 .container .content p {
   margin: 15px;
+  margin-bottom: 0;
+  margin-top: 0;
+  font-size: 17px;
 }
 
 .container .content h4 {
   margin: 15px;
+  margin-top: 4px;
+  margin-bottom: 5px;
+  font-size: 20px;
 }
 
 .container .content a:hover {
   color: rgb(228, 143, 17);
+}
+
+.article-icons i {
+  font-size: 14px;
+}
+
+@media only screen and (min-width: 768px) {
+  .container .content p {
+    font-size: 22px;
+    margin-bottom: 0;
+    margin-top: 0;
+  }
+  
+  .container .content h4 {
+    margin: 15px;
+    margin-top: 3px;
+    margin-bottom: 0;
+    font-size: 28px;
+  }
+
+  .article-icons i {
+    font-size: 22px;
+  }
+  
 }
     
 
@@ -607,12 +657,26 @@ p {
     font-size: 22px;
   }
 
-  .container .content p {
+ /* .container .content p {
     margin-top: 10px 0 10px;
-  }
+  }  */
 
   .container .content a:hover {
     color: rgb(228, 143, 17);
+  }
+
+  .container .content p {
+    font-size: 24px;
+    margin: 10;
+  }
+  
+  .container .content h4 {
+    margin: 15px;
+    font-size: 36px;
+  }
+
+  .article-icons i {
+    font-size: 24px;
   }
 
   footer {
@@ -624,7 +688,7 @@ p {
   }
 
   footer .social-icons p i {
-    font-size: 1.6em;
+    font-size: 1.8em;
   }
 
 
