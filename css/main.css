@@ -139,13 +139,13 @@ textarea {
     color: #3e3f41;
     font-size: .99em;
     font-weight: bold;
+    transition: 0.3s ease-in-out;
   }
   
   .main-nav a:hover {
     color: #539eee;
   }
   
-
   .header {
     padding-top: .5em;
     padding-bottom: .5em;
@@ -267,6 +267,7 @@ footer .social-icons p {
 footer .social-icons p i {
   font-size: 1.3125em;
   color: #222;
+  transition: 0.5s ease-in-out;
 }
 
 footer .social-icons p i:hover {
@@ -419,6 +420,7 @@ footer .copyright {
   padding: 0; /* padding */
   text-align: center;
   font-size: 16px;
+  transition: 0.5s ease-in-out;
 }
 
 .container .content p {
@@ -509,6 +511,12 @@ footer .copyright {
   margin-top: 8px;
   vertical-align: middle;
   width: 100%;
+  opacity: 1.0;
+  transition: 0.3s ease-in-out;
+}
+
+.column img:hover {
+  opacity: 0.6;
 }
 
 .container {
@@ -536,7 +544,6 @@ footer .copyright {
 .container .content h4 {
   margin: 15px;
 }
-
 
 .container .content a:hover {
   color: rgb(228, 143, 17);
