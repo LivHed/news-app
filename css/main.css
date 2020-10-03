@@ -139,6 +139,39 @@ textarea {
     padding-right: 10px;
     font-size: 12px;
   }
+
+  .article-piece {
+    display: flex;
+ /*   flex-flow: row wrap;
+    align-items: space-between;  */
+    justify-content: center;
+  } 
+
+  .article {
+    width: 95%;
+    line-height: 26px;
+    font-family: 'Open Sans', sans-serif;
+  }
+
+  .text-link {
+    color: rgb(36, 36, 230);
+  }
+
+  .article-list {
+    text-indent: 20px;
+    list-style: circle;
+    margin-top: 10px;
+  }
+
+  .article-heading {
+    font-size: 18px;
+  }
+
+  #image-fit {
+    object-fit: cover;
+    width: 100%;
+    height: 250px;
+  }
   
   .logo {
     margin: 0;
@@ -214,21 +247,21 @@ textarea {
  
 h2 {
   font-family: 'Poppins', sans-serif;
-  font-size: 1.875em;
+  font-size: 1.57em;
   font-weight: 500;
 }
  
 h3, 
 h4 {
   font-family: 'Poppins', sans-serif;
-  font-size: 1.3em;
+  font-size: 1.4em;
   margin: 20px 0;
   font-weight: 500;
 }
  
 p {
   font-size: 0.875em;
-  line-height: 1.29;
+  line-height: 1.56;  
 }
 
 .article-piece {
@@ -244,13 +277,78 @@ p {
 
 .article {
   background: white;
+  margin-top: 28px;
+  margin-bottom: 28px;
+  box-shadow: 2px 2px 2px rgba(0,0,0,0.3);
+  line-height: 34px;
+}
+
+.article-list {
+  border-bottom: 1px solid #3e3f41;
+  border-top: 1px solid #3e3f41
 }
 
 .article > h2, p {
   margin: 4px;
-  font-size: 90%;
+  font-size: 90%;  
+  font-size: 18px;
 }
 
+.article h2 {
+  font-size: 28px;
+  margin-top: 8px;
+  margin-bottom: 15px;
+}
+
+/* Change colors for the article background */
+
+.article{
+  background:white; 
+  transition:background 1s ease 0s;
+}
+button{
+  background:rgba(255,255,255,0.3);
+  border-radius:10px;
+  border:1px solid rgb(75, 74, 74);
+  padding:10px;
+  cursor:pointer;
+  font-weight:normal;
+  font-size: 18px;
+  margin:25px;
+  box-shadow:2px 2px 2px rgba(0,0,0,0.3);
+}
+
+/* change to these colors when clicking the buttons */
+.pink-color {
+  background: lightpink !important;
+  color: black;
+}
+
+.blue-color{
+  background:#75a9ec !important;
+  color: white;
+}
+
+.back-to-white{
+  background: white !important;
+  color: black;
+}
+
+/* colors of the buttons */
+#btn-1 {
+  background: lightpink;
+  color: black;
+}
+
+#btn-2 {
+  background: #75a9ec;
+  color: black;
+}
+
+#btn-3 {
+  background: white;
+  color: black;
+}
 
 /* Base styles Header, footer */   
 header, footer {
@@ -622,6 +720,10 @@ footer .copyright {
   font-size: 14px;
 }
 
+.article-heading {
+  font-size: 24px;
+}
+
 @media only screen and (min-width: 768px) {
   .container .content p {
     font-size: 22px;
@@ -638,6 +740,10 @@ footer .copyright {
 
   .article-icons i {
     font-size: 22px;
+  }
+
+  .article-heading {
+    font-size: 28px;
   }
   
 }
@@ -667,7 +773,7 @@ h4 {
 
 p {
     font-size: 1.125em;
-    line-height: 1.333;
+    line-height: 1.45;
 }
 
   footer h4 {
@@ -712,6 +818,22 @@ p {
 
   .article-icons i {
     font-size: 24px;
+  }
+
+  .article-heading {
+    font-size: 32px;
+    margin-top: 24px;
+    margin-bottom: 24px;
+  }
+
+  #image-fit {
+    object-fit: cover;
+    width: 100%;
+    height: 350px;
+  }
+
+  .article {
+    width: 80%;
   }
 
   footer {
