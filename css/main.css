@@ -126,6 +126,14 @@ textarea {
     text-align: right;
   }
 
+  .article-icons a {
+    transition: 0.3s ease-in-out;
+  }
+
+  .article-icons a:hover {
+    color: rgb(228, 143, 17);
+  }
+
   .article-icons i {
     padding-left: 10px;
     padding-right: 10px;
@@ -223,7 +231,7 @@ p {
   line-height: 1.29;
 }
 
-.arictle-piece {
+.article-piece {
   margin: 0;
   padding: 5px;
   background-color: lightgray;
@@ -306,7 +314,7 @@ footer .social-icons p {
 footer .social-icons p i {
   font-size: 1.3125em;
   color: #222;
-  transition: 0.5s ease-in-out;
+  transition: 0.3s ease-in-out;
 }
 
 footer .social-icons p i:hover {
@@ -325,6 +333,7 @@ footer .copyright {
   flex-direction: row;
   padding: 0 4px;
   margin-top: 15px;
+  margin-bottom: 30px;
 }
   
 /* img- columns placed on top of each other */
@@ -338,6 +347,7 @@ footer .copyright {
   margin-top: 8px;
   vertical-align: middle;
   width: 100%;
+  margin-top: 20px;
 }
 
 
@@ -459,7 +469,7 @@ footer .copyright {
   padding: 0; /* padding */
   text-align: center;
   font-size: 16px;
-  transition: 0.5s ease-in-out;
+  transition: 0.3s ease-in-out;
 }
 
 .container .content p {
@@ -469,6 +479,10 @@ footer .copyright {
 
 .container .content h4 {
   margin: 5px;
+}
+
+.container .content a {
+  transition: 0.3s ease-in-out;
 }
 
 .container .content a:hover {
@@ -557,7 +571,7 @@ footer .copyright {
 }
   
 .column img {
-  margin-top: 8px;
+  margin-top: 26px;
   vertical-align: middle;
   width: 100%;
   opacity: 1.0;
@@ -684,14 +698,6 @@ p {
     padding: 0; /* Some padding */
     text-align: center;
     font-size: 22px;
-  }
-
- /* .container .content p {
-    margin-top: 10px 0 10px;
-  }  */
-
-  .container .content a:hover {
-    color: rgb(228, 143, 17);
   }
 
   .container .content p {
