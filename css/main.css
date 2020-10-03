@@ -272,6 +272,10 @@ footer .contact {
   margin-bottom: 50px;
 }
 
+footer .contact p {
+  line-height: 1.5;
+}
+
 footer h4 {
   font-size: 1.875em;
 }
