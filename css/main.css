@@ -172,6 +172,16 @@ textarea {
     width: 100%;
     height: 250px;
   }
+
+  #buttons-heading {
+    text-align: center;
+  }
+
+  .article-buttons {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+  }
   
   .logo {
     margin: 0;
@@ -267,7 +277,8 @@ p {
 .article-piece {
   margin: 0;
   padding: 5px;
-  background-color: lightgray;
+/*  background-color: lightgray;  */
+  background-color: white;
 }
 
 .article-piece > h1, .article {
@@ -279,8 +290,9 @@ p {
   background: white;
   margin-top: 28px;
   margin-bottom: 28px;
-  box-shadow: 2px 2px 2px rgba(0,0,0,0.3);
+ /* box-shadow: 1px 2px 2px 1px rgba(0,0,0,0.3); */
   line-height: 34px;
+  border: 2.3px solid lightgrey;
 }
 
 .article-list {
@@ -592,6 +604,12 @@ header {
     justify-content: center;
 }
 
+.article .article-icons i {
+  padding-left: 10px;
+  padding-right: 10px;
+  font-size: 18px;
+}
+
 
 @media only screen and (min-width: 601px) {
  
@@ -724,6 +742,12 @@ footer .copyright {
   font-size: 24px;
 }
 
+.article .article-icons i {
+  padding-left: 10px;
+  padding-right: 10px;
+  font-size: 18px;
+}
+
 @media only screen and (min-width: 768px) {
   .container .content p {
     font-size: 22px;
@@ -744,6 +768,12 @@ footer .copyright {
 
   .article-heading {
     font-size: 28px;
+  }
+
+  .article .article-icons i {
+    padding-left: 10px;
+    padding-right: 10px;
+    font-size: 20px;
   }
   
 }
@@ -834,6 +864,12 @@ p {
 
   .article {
     width: 80%;
+  }
+
+  .article .article-icons i {
+    padding-left: 10px;
+    padding-right: 10px;
+    font-size: 26px;
   }
 
   footer {
